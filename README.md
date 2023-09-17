@@ -23,6 +23,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - JCG-AC860M
   - JCG-836PRO
   - JCG-Y2
+  - JDC-1
   - DIR-878
   - DIR-882
   - K2P
@@ -31,7 +32,6 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - MR2600
   - MI-R3P
   - XY-C1
-
 - Compilation step
   - Install dependencies
     ```sh
