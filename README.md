@@ -1,23 +1,23 @@
 # padavan-4.4 #
 
-This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which is fetch from D-LINK GPL code.
+该项目基于原始的rt-n56u，具有最新的mtk 4.4.198内核，该内核是从D-LINK GPL代码获取的。
 
-- Features
-  - Based on 4.4.198 Linux kernel
-  - Support MT7621 based devices
-  - Support MT7615D/MT7615N/MT7915D wireless chips
-  - Support raeth and mt7621 hwnat with legency driver
-  - Support qca shortcut-fe
-  - Support IPv6 NAT based on netfilter
-  - Support WireGuard integrated in kernel
-  - Support fullcone NAT (by Chion82)
-  - Support LED&GPIO control via sysfs
+- 特点
+  - 基于4.4.198 Linux内核
+  - 支持基于MT7621的设备
+  - 支持MT7615D/MT7615N/MT7915D无线芯片
+  - 使用legacy驱动程序支持raeth和mt7621 hwnat
+  - 支持qca快捷键-fe
+  - 支持基于netfilter的IPv6 NAT
+  - 支持内核集成WireGuard
+  - 支持fullcone NAT（由Chion82提供）
+  - 支持通过sysfs控制LED&GPIO
 
 - WIP
-  - 802.11kvr and mtkiappd roam functions
-  - IPTV related functions
+  - 802.11kvr和mtkiappd漫游功能
+  - IPTV相关功能
 
-- Supported devices
+- 支持的设备
   - CR660x
   - JCG-Q20
   - JCG-AC860M
@@ -32,8 +32,8 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
   - MR2600
   - MI-R3P
   - XY-C1
-- Compilation step
-  - Install dependencies
+- 编译步骤
+  - 安装依赖项
     ```sh
     # Debian/Ubuntu
     sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
@@ -52,11 +52,11 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
         automake gettext gettext-dev autoconf bison \
         flex coreutils cmake git libtool gawk sudo
     ```
-  - Clone source code
+  - 克隆源码
     ```sh
-    git clone https://github.com/hanwckf/padavan-4.4.git
+    git clone https://github.com/Tine789/rt-n56u.git
     ```
-  - Prepare toolchain
+  - 准备工具链
     ```sh
     cd padavan-4.4/toolchain-mipsel
 
@@ -66,7 +66,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
     # or build toolchain with crosstool-ng
     # ./build_toolchain
     ```
-  - Modify template file and start compiling
+  - 修改模板文件并开始编译
     ```sh
     cd padavan-4.4/trunk
 
@@ -80,7 +80,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
     ./clear_tree
     ```
 
-- Manuals
+- 手册
   - Controlling GPIO and LEDs via sysfs
   - How to use NAND RWFS partition
   - How to use IPv6 NAT and fullcone NAT
